@@ -43,16 +43,31 @@ function generatePassword() {
   var correctValues = ""
   var password = []
 
-  for (var i = 0; i < enter; i++) {
-    var pickOptions = options[Math.floor(Math.random() * options.length)];
-    password.push(pickOptions);
+  if (confirmLowerCase) {
+    correctValues += "abcdefghijklmnopqrstuvwxyz"
   }
 
-  var pwd = password.join("");
+  if (confirmUpperCase) {
+    correctValues += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  }
 
-  UserInput(pwd);
+  if (confirmCharacter) {
+    correctValues += "!@#$%^&*()"
+  }
 
-  return pwd;
+  if (confirmNumber) {
+    correctValues += "1234567890"
+  }
+console.log (correctValues)
+
+  // for (var i = 0; i < enter; i++) {
+  //   var pickOptions = options[Math.floor(Math.random() * options.length)];
+  //   password.push(pickOptions);
+  // }
+
+  // var pwd = password.join("");
+
+  // return pwd;
 }
 
 // Get references to the #generate element
