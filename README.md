@@ -2,7 +2,7 @@
 (URL)
 
 ## Deployment
-[Live] (URL)
+[Live] (https://dreinaj.github.io/password-generator/)
 
 ## Author
 Gabriel Reina
