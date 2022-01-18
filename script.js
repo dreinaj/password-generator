@@ -60,14 +60,14 @@ function generatePassword() {
   }
 console.log (correctValues)
 
-  // for (var i = 0; i < enter; i++) {
-  //   var pickOptions = options[Math.floor(Math.random() * options.length)];
-  //   password.push(pickOptions);
-  // }
+  for (var i = 0; i < enter; i++) {
+    var pickOptions = correctValues[Math.floor(Math.random() * correctValues.length)];
+    password.push(pickOptions);
+  }
 
-  // var pwd = password.join("");
+  var pwd = password.join("");
 
-  // return pwd;
+  return pwd;
 }
 
 // Get references to the #generate element
